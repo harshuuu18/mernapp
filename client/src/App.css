@@ -1,0 +1,448 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+   -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;          /* Likely future */
+    -webkit-tap-highlight-color:  transparent;
+    font-family: 'Kaushan Script', cursive;
+    scroll-behavior: smooth;
+}
+html,body{
+  scroll-behavior: smooth;
+}
+
+body a{
+  text-decoration: none;
+}
+/* For Top Nav Styling */
+nav{
+  width: 100%;
+  height: 10vh;
+  min-height: 63px;
+  background-color: whitesmoke;
+  border: none;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  box-shadow: 1px 1px 10px black;
+  display: flex;justify-content: center;align-items: center;
+  position: fixed;
+  z-index: 10000;
+  font-family: 'Kaushan Script', cursive;
+}
+.inner-top-nav{
+  width: 90%;
+  height: 100%;
+  display: flex;justify-content: space-between;align-items: center;
+}
+nav h1{
+  color: black;
+}
+nav h1:hover{
+  color: rgb(238, 144, 50);
+  transition: all 1s ease;
+}
+nav h4{
+  color: black ;
+}
+/* For Top Nav Styling */
+
+.for-space{
+  width: 100%;
+  height: 10vh;
+  min-height: 60px;
+}
+
+/* For Extra Div */
+.extra-div{
+  width: 100%;
+  height: 60vh;
+  background-image: url('./img/bg3.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: rgba(0, 0, 0, 0.266);
+  background-blend-mode: darken;
+  background-attachment: fixed;
+
+
+}
+/* For Extra Div */
+
+
+/* For Main Page Styling */
+.main-page{
+  width: 100%;
+  height: 120vh;
+  /* background-color: whitesmoke; */
+  display: flex;justify-content: center;align-items: center;flex-direction: column;
+  border: none  !important;
+  background-color: whitesmoke;
+  border-radius: 20px !important;
+  margin-top: -20px;
+}
+.log-sign-btns{
+  width: 80%;
+  height: 16vh;
+  background-color: transparent;
+  display: flex;justify-content: space-between;align-items: center;flex-direction: column;
+
+
+}
+.log-btn{
+  border: none !important;
+  border-radius: 10px !important;
+  width: 150px;
+  background-color: black !important;
+}
+.sign-btn{
+  border: none !important;
+  border-radius: 10px !important;
+  width: 150px;
+  background-color: black !important;
+}
+.intro{
+  width: 100%;
+  height: 10vh;
+  background-color: whitesmoke;
+  display: flex;justify-content: center;align-items: center;flex-direction: column;
+  margin-top: 10px;
+}
+.intro h5{
+  margin-left: -200px;
+  color: gray;
+}
+.intro h4{
+  color: rgb(65, 65, 65);
+}
+.steps{
+  width: 100%;
+  height: 20vh;
+  display: flex;justify-content: center;align-items: center;flex-direction: column;
+}
+.steps h4,h3{
+  color: gray;
+}
+
+/* For Main Page Styling */
+
+/* For Signup Page Styling */
+.signup-page{
+  width: 100%;
+  height: 100vh;
+  min-height: 575px;
+  display: flex;justify-content: center;align-items: center;flex-direction: column;
+  /* background-color: whitesmoke; */
+}
+.login-page{
+    width: 100%;
+  height: 70vh;
+  min-height: 400px;
+  display: flex;justify-content: center;align-items: center;flex-direction: column;
+
+}
+.inputs{
+  width: 80%;
+  height: 40vh;
+  min-height: 230px;
+  /* background-color: red; */
+  display: flex;align-items: center;justify-content: center;flex-direction: column;
+  border: 1px solid grey;
+  border-radius: 20px;
+}
+.inputs input{
+  width: 200px;
+  height: 45px;
+  min-height: 45px;
+  border: 1px solid gray;
+  outline: none;
+  border-radius: 25px;
+  padding: 20px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.inputs input:focus ~ .inputs{
+  border: 2px solid rgb(238, 144, 50);
+}
+.inputs input:focus{
+  border: 2px solid rgb(238, 144, 50);
+}
+.inputs1{
+  width: 80%;
+  height: 10vh;
+  min-height: 65px;
+  min-height: calc(115/2)px;
+  border: 1px solid orange;
+  border-radius: 20px;
+  display: flex;align-items: center;justify-content: center;
+}
+.inputs1 span{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.inputs1 input{
+  width: 50px;
+  height: 25px;
+}
+.inputs1 label{
+  width: 60px;
+  height: 10px;
+ position: absolute;
+ margin-top: -60px;
+ background-color: white;
+ align-items: center;justify-content: center;display: flex;
+
+}
+.signup-btns{
+  width: 100%;
+  height: 10vh;
+  display: flex;align-items: center;justify-content: center;
+}
+.signup-btns button{
+  width: 150px;
+  height: 35px;
+  background-color: black;
+  outline: none;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  font-size: 18px;
+  align-items: center;
+}
+
+.toast-notification{
+    position: fixed;
+    width: 93% !important;
+    margin: 0px auto;
+    right: 0px;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    z-index: 10948 !important;
+    pointer-events: none;
+    transition: all 300ms ease 0s;
+    transform: translateY(0px);
+    margin-top: 70px !important;
+}
+/* For Signup Page Styling */
+
+
+/* For Home Page Styling */
+.home-page{
+  width: 90%;
+  height: 12vh;
+  min-height: 90px;
+  margin: auto;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 1px  1px 8px black;
+  display: flex;align-items: center;justify-content: center;flex-direction: row;
+}
+.home-page3{
+  width: 25%;
+  height: 100%;
+  display: flex;align-items: center;justify-content: center;
+}
+.home-page-dp{
+  width: 55px;
+  height: 55px;
+  /* background-color: red; */
+  border-radius: 50px;
+  /* background-image: url(./img//boy.png); */
+  background-size: cover;
+}
+.home-page1{
+  width: 45%;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.home-page1 h5{
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+  color: gray;
+}
+.home-page2{
+  width: 30%;
+  height: 100%;
+  display: flex;align-items: center;justify-content: center;
+}
+input{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.likes-show{
+  width: 80%;
+  height: 2vh;
+  min-height: 30px;
+  margin: auto;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 1px  1px 2px black;
+  font-size: 14px;
+  display: flex;align-items: center;justify-content: center;flex-direction: row;
+}
+/* For Home Page Styling */
+
+/* For Upload Div Styling  */
+.upload-crush{
+  width: 80px;
+  height: 80px;
+  background-color: rgba(0, 0, 0, 0.527);
+  border: none;
+  border-radius: 50px;
+  position: fixed;
+  float: right;
+  bottom: 30px;
+  right: 30px;
+  display: flex;align-items: center;justify-content: center;
+
+
+}
+
+/* For Upload Div Styling  */
+
+/* For .upload-crush Styling */
+.upload-main{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  display: flex;align-items: center;justify-content: center;flex-direction: column;
+  z-index: 200;
+  top: 0;
+}
+@keyframes upload-it {
+  0%{
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+}
+.upload-it{
+  width: 90%;
+  height: 60%;
+  /* margin: auto; */
+  background-color: rgba(0, 0, 0, 0.534);
+  backdrop-filter: blur(5px);
+  border: none;
+  border-radius: 20px;
+  display: flex;align-items: center;justify-content: center;flex-direction: column;
+  animation: upload-it .5s 1 ease-in-out;
+}
+
+.tutorial-upload{
+  width: 100%;
+  height: 30px;
+  display: flex;align-items: center;justify-content: center;
+  color: white;
+  font-size: 17px;
+}
+.crush-name1{
+  width: 80%;
+  height: 60px;
+  border: 1px solid orange;
+  border-radius: 20px;
+  display: flex;align-items: center;justify-content: center;
+  backdrop-filter: none;
+}
+.crush-name{
+  width: 200px;
+  height: 40px;
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 15px;
+  font-size: 16px;
+  outline: none;
+  transition: all .5s ease;
+  backdrop-filter: blur(0px);
+}
+.crush-name:focus{
+  border: 2px solid rgb(238, 144, 50);
+}
+.for-spans span{
+  color: white !important;
+}
+
+.upload-btns{
+  width: 90%;
+  height: 10%;
+  /* margin: auto; */
+  background-color: rgba(0, 0, 0, 0.534);
+  backdrop-filter: blur(5px);
+  border: none;
+  border-radius: 20px;
+  display: flex;align-items: center;justify-content: center;flex-direction: column;
+  
+}
+.upload-btns button{
+  width: 180px;
+  min-width: 180px;
+  height: 30px;
+  border: none;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+  outline: none;
+}
+.cancel-div{
+  width: 80%;
+  height: 20px;
+  display: flex;align-items: center;flex-direction: row-reverse;
+}
+.cancel-div div{
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50px;
+  background-color: white;
+  display: flex;align-items: center;justify-content: center;
+  margin-top: 40px;
+  z-index: 10000;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+}
+/* For .upload-crush Styling */ 
+
+/* Error Handling */
+.MuiAlert-filledError{
+  position: fixed;
+  top: 80px;
+  opacity: 0;
+}
+.MuiAlert-filledSuccess{
+  position: fixed;
+  top: 80px;
+  opacity: 0;
+
+}
+.for-animation{
+  
+  animation: Alert 1s 1;
+}
+@keyframes Alert {
+  0%{
+    margin-left: -200px;
+    opacity: 0;
+
+  }
+}
+/* Error Handling */
+
+/* For Socail Media div Styling */
+.social-div{
+  width: 100%;
+  height: 26vh;
+  min-height: 135px;
+  display: flex;align-items: center;justify-content: center;flex-direction: column;
+  
+}
+.social-icons{
+  width: 80%;
+  height: 80%;
+  display: flex;align-items: center;justify-content: space-between;flex-direction: row;
+
+}
+/* For Socail Media div Styling */
