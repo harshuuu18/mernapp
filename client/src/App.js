@@ -28,7 +28,7 @@ const Routing = () => {
   },[])
   return (
     <Switch>
-      <Route exact path='/main'>
+      <Route exact path='/'>
         <ExtraSpace />
 
         <Afterlogin />

@@ -8,7 +8,7 @@ const TopNav = () => {
         <>
             <nav>
                 <div className="inner-top-nav">
-                <Link to={state?"/main":"/home"}><h1>UCrush</h1></Link>
+                <Link to={state?"/":"/home"}><h1>UCrush</h1></Link>
                 <Link to="/home"><h4>Dark</h4></Link>
                 </div>
             </nav>
